@@ -1,0 +1,21 @@
+name = copperstone art
+description = Custom photo gallery theme.
+package = Core
+version = 1x
+screenshot = copperstoneart.png
+core = 7.x
+engine = phptemplate
+
+scripts[] = js/jquery.formalize.js
+
+; CSS
+stylesheets[all][] = css/formalize.css
+stylesheets[all][] = css/main.css
+
+; REGIONS
+regions[about_me] = About Me
+regions[content] = Content
+regions[contactForm] = contact form
+regions[footer] = Footer
+
+
