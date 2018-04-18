@@ -117,17 +117,23 @@
         <?php endif; ?>
       </header>
     </section>
+
     <?php if($messages): ?>
     <?php print $messages; ?>
-          <?php endif; ?>
-    <main class="mainContent">
-      <?php if ($page['about_me']): ?>
-      <section class="aboutMe">
-        <div class="row">
-          <?php print render($page['about_me']); ?>
+    <?php endif; ?>
+
+
+<div class="slideshow">
+        <?php if ($page['slideshow']): ?>
+        <div class="slideshow-inner">
+          the
+          <?php print render($page['slideshow']); ?>
         </div>
-      </section>
-      <?php endif; ?>
+        <?php endif; ?>
+      </div>
+    <main class="mainContent">
+      
+
       <div class="row">
         <?php print render($page['content']); ?>
       </div>
@@ -141,26 +147,9 @@
       </div>
       </section>
     </main>
+  </div>
+  <footer>
+    <div class="footer">
+      <?php print render($page['footer']); ?>
     </div>
-    <footer>
-      <div class="footer">
-        <?php print render($page['footer']); ?>
-      </div>
-    </footer>
-
-
-  <!-- <section class="imageGallery">
-                <div class="row">
-                    <div class="col-s-3">
-                        <img src="images/alex-smith.jpg" alt="alex-smith">
-                    </div>
-                    <div class="col-s-3">
-                        <img src="images/alex-smith.jpg" alt="alex-smith">
-                    </div>
-                    <div class="col-s-3">
-                        <img src="images/alex-smith.jpg" alt="alex-smith">
-                    </div>
-                    <div class="col-s-3">
-                            <img src="images/alex-smith.jpg" alt="alex-smith">
-                        </div>
-                </div> -->
+  </footer>

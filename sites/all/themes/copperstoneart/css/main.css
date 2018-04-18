@@ -35,14 +35,10 @@ html {
 }
 
 .header h1,
-.aboutMe h2,
 .galleryTitle {
   font-size: 10vw;
 }
 
-.aboutMe p {
-  font-size: 5vw;
-}
 
 .container {
   width: 100%;
@@ -51,6 +47,7 @@ html {
 
 .galleryViewContainer {
   width: 80%;
+  padding-top:50px;
   margin: auto;
 }
 
@@ -79,6 +76,9 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
   height: 20vw;
 }
 
+.slideshow {
+  min-height: 300px;
+}
 .header h1 {
   text-align: center;
   font-family: 'Eagle Lake', cursive;
@@ -88,10 +88,6 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
   text-decoration: none;
 }
 
-.aboutMe h2 {
-  text-align: center;
-  font-family: 'Eagle Lake', cursive;
-}
 
 .galleryTitle {
   text-align: center;
@@ -144,13 +140,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
     height: 10vw;
   }
   .header h1,
-  .aboutMe h2,
   .galleryTitle {
     font-size: 5vw;
   }
-  .aboutMe p {
-    font-size: 2.5vw;
-  }
+
   .col-s-1 {
     width: 8.33%;
   }
@@ -192,14 +185,9 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
 @media only screen and (min-width: 768px) and (orientation: portrait) {
   /* For IPADS: */
   .header h1,
-  .aboutMe h2,
   .galleryTitle {
     font-size: 5vw;
   }
-  .aboutMe p {
-    font-size: 2.5vw;
-  }
-
   .col-m-1 {
     width: 8.33%;
   }
@@ -241,13 +229,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
 @media only screen and (min-width: 768px) and (orientation: landscape) {
   /* For desktop: */
   .header h1,
-  .aboutMe h2,
   .galleryTitle {
     font-size: 4vw;
   }
-  .aboutMe p {
-    font-size: 1.5vw;
-  }
+
 
   #images {
     /* Prevent vertical gaps */
