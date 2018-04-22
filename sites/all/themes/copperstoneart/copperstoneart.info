@@ -12,11 +12,13 @@ scripts[] = js/scripts.js
 
 ; CSS
 stylesheets[all][] = css/formalize.css
+stylesheets[all][] = css/main.css
 stylesheets[all][] = vendor/flexslider/flexslider.css
 
 ; REGIONS
-regions[content] = Content
+regions[menu] = menu
 regions[slideshow] = slideshow
+regions[content] = Content
 regions[contactForm] = contact form
 regions[footer] = Footer
 
