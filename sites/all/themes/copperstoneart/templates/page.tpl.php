@@ -118,36 +118,48 @@
       </header>
     </section>
 
+    <?php if ($main_menu): ?>
+    <div id="navigation">
+      <div class="section">
+        <div class="row">
+          <div class="col-s-12">
+          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!-- /.section, /#navigation -->
+    <?php endif; ?>
+
     <?php if($messages): ?>
     <?php print $messages; ?>
     <?php endif; ?>
 
-
-<div class="slideshow">
-        <?php if ($page['slideshow']): ?>
-        <div class="slideshow-inner">
-          the
-          <?php print render($page['slideshow']); ?>
-        </div>
-        <?php endif; ?>
+     <div class="slideshow region">
+      <?php if ($page['slideshow']): ?>
+      <div class="slideshow-inner">
+        <?php print render($page['slideshow']); ?>
       </div>
-    <main class="mainContent">
-      
+      <?php endif; ?>
+    </div>
 
+    <main class="mainContent">
       <div class="row">
         <?php print render($page['content']); ?>
       </div>
-      <?php if($page['contactForm']): ?>
-      <div class="row">
-        <?php print render($page['contactForm']); ?>
-      </div>
-      <?php endif; ?>
-      <div class="row">
-        <?php print $feed_icons; ?>
-      </div>
-      </section>
     </main>
+
+    <section class="contactFormContent">
+        <div class="row">
+            <?php if($page['contactForm']): ?>
+              <?php print render($page['contactForm']); ?>
+            <?php endif; ?>
+          </div>
+    </section>
   </div>
+
+
   <footer>
     <div class="footer">
       <?php print render($page['footer']); ?>
