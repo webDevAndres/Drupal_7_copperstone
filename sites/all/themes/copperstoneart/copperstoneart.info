@@ -7,7 +7,7 @@ core = 7.x
 engine = phptemplate
 
 scripts[] = js/jquery.formalize.js
-scripts[] = vendor/flexslider/jquery.flexslider.js
+scripts[] = vendor/flexslider/jquery.flexslider-min.js
 scripts[] = js/scripts.js
 
 ; CSS
@@ -16,7 +16,6 @@ stylesheets[all][] = css/main.css
 stylesheets[all][] = vendor/flexslider/flexslider.css
 
 ; REGIONS
-regions[menu] = menu
 regions[slideshow] = slideshow
 regions[content] = Content
 regions[contactForm] = contact form
