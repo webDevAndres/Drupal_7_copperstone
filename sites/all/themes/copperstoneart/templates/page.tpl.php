@@ -163,5 +163,10 @@
   <footer>
     <div class="footer">
       <?php print render($page['footer']); ?>
+      <p class="copyright"><span id="copyright"></span></p>
+      <script>
+  var year = new Date();
+document.getElementById("copyright").innerHTML = '&copy;' + year.getFullYear() + ' Copperstone art. All rights reserved.';
+      </script>
     </div>
   </footer>
