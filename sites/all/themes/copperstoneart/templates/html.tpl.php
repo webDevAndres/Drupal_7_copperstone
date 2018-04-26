@@ -58,7 +58,6 @@
     </title>
     <?php print $styles; ?>
     <?php print $scripts; ?>
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
   </head>
 
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>
